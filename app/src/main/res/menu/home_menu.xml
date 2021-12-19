@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="home" />
+
+    <item
+        android:id="@+id/shippingRate"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_local_shipping_24"
+        android:title="Shipping Rate"/>
+
+    <item
+        android:id="@+id/tracking"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_grass_24"
+        android:title="Tracking"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="@string/exit"/>
+</menu>

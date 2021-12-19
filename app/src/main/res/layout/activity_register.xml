@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.auth.RegisterActivity">
+
+    <ImageView
+      android:id="@+id/ivLogin"
+      android:layout_width="240dp"
+      android:layout_height="240dp"
+      android:layout_marginTop="32dp"
+      android:src="@drawable/logo_ngirim"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/txtRegister"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:textColor="@color/black"
+      android:textSize="32sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/ivLogin"
+      app:layout_constraintStart_toStartOf="@+id/ivLogin"
+      app:layout_constraintTop_toBottomOf="@+id/ivLogin" />
+
+    <EditText
+      android:id="@+id/etName"
+      style="@style/Widget.AppCompat.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="0dp"
+      android:layout_marginEnd="24dp"
+      android:autofillHints="name"
+      android:hint="@string/nama"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtRegister" />
+
+    <EditText
+      android:id="@+id/etUsername"
+      style="@style/Widget.AppCompat.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="24dp"
+      android:autofillHints="username"
+      android:hint="@string/email"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+      android:id="@+id/etPhoneNumber"
+      style="@style/Widget.AppCompat.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="80dp"
+      android:layout_marginEnd="24dp"
+      android:autofillHints="username"
+      android:hint="@string/phone_number"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+      android:id="@+id/etPassword"
+      style="@style/Widget.AppCompat.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="80dp"
+      android:layout_marginEnd="24dp"
+      android:autofillHints="password"
+      android:hint="@string/password"
+      android:inputType="textPassword"
+      app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      app:layout_constraintEnd_toEndOf="@+id/etPassword"
+      app:layout_constraintStart_toStartOf="@+id/etPassword"
+      app:layout_constraintTop_toBottomOf="@+id/etPassword">
+
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/register" />
+
+    </LinearLayout>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
